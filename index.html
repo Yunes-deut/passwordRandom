@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="titel">password generator</h1>
+    <div class="box">
+      <input type="text" maxlength="30">
+    <div class="password-stark"></div>
+    <div class="length">
+      <p>password length</p>
+      <span class="password-length">10</span>
+    </div>
+    <input type="range" min="1" max="30" step="1" >
+    <div class="condition">
+      <p>password condition</p>
+      <div class="condition-checked" >
+        <div class="condition1">
+          <label >
+            <input type="checkbox">
+            <span>Lowercase(a-z)</span>
+          </label>
+          <label > 
+            <input type="checkbox">
+            <span>Uppercase(A-Z)</span></label>
+        </div>
+        <div class="condition1">
+          <label >
+            <input type="checkbox">
+            <span>number</span>
+          </label>
+          <label>
+            <input type="checkbox">
+            <span>Symbol(@\$)</span>
+          </label>
+        </div>
+        <div class="condition1">
+          <label >
+            <input type="checkbox">
+            <span>include duplicate</span>
+          </label>
+        </div>
+      </div> 
+    </div>
+    <button class="random">generat password</button>
+    </div>
+  </div>
+    
+  <script src="./script.js"></script>
+</body>
+</html>
